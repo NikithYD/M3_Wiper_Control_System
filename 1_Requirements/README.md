@@ -23,4 +23,6 @@ The chart below shows the SWOT analysis of the project designed-
  
 # High and Low Level Requirements
  ## High Level Requirements
- 
+ ![Screenshot (1334)](https://user-images.githubusercontent.com/68335075/167800231-e25232d6-e6cb-4835-9511-7938176fd2f8.png)
+ ## Low Level Requirements
+ ![Screenshot (1335)](https://user-images.githubusercontent.com/68335075/167800487-0137f64d-19e7-4816-8a29-9f3f5778a28b.png)
