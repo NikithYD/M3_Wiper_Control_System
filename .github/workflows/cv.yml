@@ -1,4 +1,4 @@
-name: Compile-Windows
+name: Cppcheck
 
 on:
   push:
@@ -9,11 +9,11 @@ on:
 jobs:
   build:
 
-    runs-on: Windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: get_arm-gcc
-      run: sudo apt-get install gcc-arm binutils-arm arm-libc
-    - name: Compile
-      run: make 3_Implementation
+    - name: get_cppcheck
+      run: sudo apt-get install cppcheck
+    - name: Code Quality
+      run: cppcheck --enable=all 3_Implementation
