@@ -1,0 +1,19 @@
+name: Compile-Windows
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: Windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: get_arm-gcc
+      run: sudo apt-get install gcc-arm binutils-arm arm-libc
+    - name: Compile
+      run: make 3_Implementation
